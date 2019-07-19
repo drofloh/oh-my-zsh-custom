@@ -77,7 +77,7 @@ function prompt_git () {
   local prompt_git_end="%{$reset_color%}%{$FG[244]%}$(prompt_separator)"
   # https://stackoverflow.com/questions/2180270/check-if-current-directory-is-a-git-repository
   if [ -d .git ] || git rev-parse --git-dir > /dev/null 2>&1; then
-    echo "%{$bg_col%}${prompt_git_start} %{$fg[blue]%} $(parse_git_dirty) %{$fg[white]%}$(git_current_branch)$(git_prompt_status)$(git_remote_status)$(git_prompt_behind)$(git_prompt_ahead)$(git_prompt_remote)${prompt_git_end}"
+    echo "%{$bg_col%}${prompt_git_start} %{$fg[blue]%} $(parse_git_dirty) %{$fg[white]%}$(git_current_branch)$(git_prompt_status)$(git_remote_status)$(git_prompt_remote)${prompt_git_end}"
   else
     echo "%{$reset_color%}%{$prompt_git_start%}"
   fi
