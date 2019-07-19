@@ -4,4 +4,5 @@ Personal [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) theme and custom
 
 Requires a font with extra glyphs / icons added, such as [Hack](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack) from [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts).
 
-
+## Preview
+![screenshot](https://raw.githubusercontent.com/drofloh/oh-my-zsh-custom/master/screenshot.png)
