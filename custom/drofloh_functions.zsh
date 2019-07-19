@@ -113,7 +113,7 @@ function prompt_battery() {
     icon=$ICONS[battery_plugged_in]
     batt_col=$fg[green]
   fi
-  echo "%{$FG[240]%}$(rprompt_separator) %{$BG[240]%} %{$batt_col%}${icon}${power_icon} %{$fg[white]%}${battery_perc}%%%{$reset_color%}"
+  echo "%{$FG[240]%}$(rprompt_separator) %{$BG[240]%} %{$batt_col%}${icon}${power_icon} %{$fg[white]%}${battery_perc}%% %{$reset_color%}"
 }
 
 function prompt_time() {
