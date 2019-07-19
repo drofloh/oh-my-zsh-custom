@@ -117,7 +117,7 @@ function prompt_battery() {
 }
 
 function prompt_time() {
-  local time_icon="%{$fg[magenta]%}${ICONS[time]}"
+  local time_icon="%{$fg[cyan]%}${ICONS[time]}"
   local the_time="%{$fg[white]%}[%T]"
 
   echo "%{$FG[244]%}$(rprompt_separator) %{$BG[244]%} ${time_icon} ${the_time}"
