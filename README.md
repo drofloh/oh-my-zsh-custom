@@ -23,4 +23,5 @@ Requires a font with extra glyphs / icons added, such as [Hack](https://github.c
 ## Preview
 ![screenshot](https://raw.githubusercontent.com/drofloh/oh-my-zsh-custom/master/screenshot.png)
 
-Terminal colours / inspriation from [iterm2-material-design](https://www.martinseeler.com/iterm2-     material-design/). 
+Terminal colours / inspriation from [iterm2-material-design](https://www.martinseeler.com/iterm2-material-design/). 
+
