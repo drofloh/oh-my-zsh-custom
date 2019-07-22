@@ -18,7 +18,7 @@
 PROMPT='$(prompt_start)$(prompt_dir)$(prompt_git)
 %{$fg[white]%}${ICONS[terminal]} $ '
 
-RPROMPT='$(prompt_time)$(prompt_battery)'
+RPROMPT='$(prompt_ruby_rbenv)$(prompt_time)$(prompt_battery)'
 
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%}${ICONS[git_branch]}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}${ICONS[git_branch]}"

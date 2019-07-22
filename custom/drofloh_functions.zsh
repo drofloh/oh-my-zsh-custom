@@ -30,6 +30,9 @@ ICONS=(
   # time / clock icon
   time               $'\uf49b' # 
 
+  # ruby icon
+  ruby               $'\ue21e' #  
+
   # git status icons
   git_branch         $'\ue0a0' # 
   git_added          $'\uf457' # 
@@ -121,4 +124,12 @@ function prompt_time() {
   local the_time="%{$fg[white]%}[%T]"
 
   echo "%{$FG[244]%}$(rprompt_separator) %{$BG[244]%} ${time_icon} ${the_time}"
+}
+
+function prompt_ruby_rbenv() {
+  local ruby_icon="%{$fg[red]%}${ICONS[ruby]}"
+  if [ -f .ruby-version ] ; then
+    local version="%{$fg[white]%}$(cat .ruby-version)"
+    echo "%{$FG[248]%}$(rprompt_separator) %{$BG[248]%} ${ruby_icon} ${version}"
+  fi
 }
