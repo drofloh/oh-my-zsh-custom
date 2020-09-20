@@ -10,24 +10,22 @@
 # Tested with Hack: 
 #     https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack
 #
-# Should also enable the battery plugin in the main oh-my-zsh 
-# ~/.zshrc
 #
 ################################################################
 
-PROMPT='$(prompt_start)$(prompt_dir)$(prompt_git)
-%{$fg[white]%}${ICONS[terminal]} $ '
+PROMPT='$(prompt_start)$(prompt_dir)$(prompt_git)  '
 
-RPROMPT='$(prompt_ruby_rbenv)$(prompt_time)$(prompt_battery)'
+#RPROMPT='$(prompt_nvm)'
 
+# TODO - colors
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%}${ICONS[git_branch]}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}${ICONS[git_branch]}"
-ZSH_THEME_GIT_PROMPT_ADDED=" %{$fg[magenta]%}${ICONS[git_added]}"
-ZSH_THEME_GIT_PROMPT_MODIFIED=" %{$fg[magenta]%}${ICONS[git_modified]}"
-ZSH_THEME_GIT_PROMPT_DELETED=" %{$fg[magenta]%}${ICONS[git_deleted]}"
-ZSH_THEME_GIT_PROMPT_RENAMED=" %{$fg[magenta]%}${ICONS[git_renamed]}"
-ZSH_THEME_GIT_PROMPT_UNMERGED=" %{$fg[magenta]%}${ICONS[git_unmerged]}"
-ZSH_THEME_GIT_PROMPT_UNTRACKED=" %{$fg[magenta]%}${ICONS[git_untracked]}"
+ZSH_THEME_GIT_PROMPT_ADDED=" %{$fg[green]%}${ICONS[git_added]}"
+ZSH_THEME_GIT_PROMPT_MODIFIED=" %{$fg[yellow]%}${ICONS[git_modified]}"
+ZSH_THEME_GIT_PROMPT_DELETED=" %{$fg[red]%}${ICONS[git_deleted]}"
+ZSH_THEME_GIT_PROMPT_RENAMED=" %{$fg[white]%}${ICONS[git_renamed]}"
+ZSH_THEME_GIT_PROMPT_UNMERGED=" %{$fg[white]%}${ICONS[git_unmerged]}"
+ZSH_THEME_GIT_PROMPT_UNTRACKED=" %{$fg[yellow]%}${ICONS[git_untracked]}"
 ZSH_THEME_GIT_PROMPT_AHEAD=" %{$fg[green]%}${ICONS[git_ahead]}"
 ZSH_THEME_GIT_PROMPT_BEHIND=" %{$fg[red]%}${ICONS[git_behind]}"
 ZSH_THEME_GIT_PROMPT_REMOTE_EXISTS=" %{$fg[green]%}${ICONS[git_remote_exists]}"

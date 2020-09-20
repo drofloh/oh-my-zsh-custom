@@ -14,10 +14,6 @@ Update the following in `~/.zshrc`
 
 `ZSH_CUSTOM=~/src/github.com/drofloh/oh-my-zsh-custom/custom`
 
-- add battery to the list of plugins
-
-`plugins=(battery)`
-
 Requires a font with extra glyphs / icons added, such as [Hack](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack) from [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts).
 
 ## Preview
