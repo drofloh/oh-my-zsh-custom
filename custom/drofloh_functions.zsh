@@ -87,21 +87,25 @@ function prompt_git () {
 }
 
 function prompt_battery() {
+  if [[ "$OSTYPE" = darwin* ]]; then
+    battery_perc=$(pmset -g batt | grep -Eo "\d+%" | cut -d% -f1)
+  else
+    battery_perc=$(battery_pct)
+  fi
 
-  battery_perc=$(battery_pct)
-  if [ $battery_perc -gt 90 ]; then
+  if [[ $battery_perc -gt 90 ]]; then
     icon=$ICONS[battery_full]
     batt_col=$fg[green]
-  elif [ $battery_perc -gt 70 ]; then
+  elif [[ $battery_perc -gt 70 ]]; then
     icon=$ICONS[battery_80]
     batt_col=$fg[green]
-  elif [ $battery_perc -gt 50 ]; then
+  elif [[ $battery_perc -gt 50 ]]; then
     icon=$ICONS[battery_60]
     batt_col=$fg[green]
-  elif [ $battery_perc -gt 30 ]; then
+  elif [[ $battery_perc -gt 30 ]]; then
     icon=$ICONS[battery_40]
     batt_col=$fg[yellow]
-  elif [ $battery_perc -gt 10 ]; then
+  elif [[ $battery_perc -gt 10 ]]; then
     icon=$ICONS[battery_20]
     batt_col=$fg[yellow]
   else

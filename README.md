@@ -1,7 +1,5 @@
 # oh-my-zsh-custom
 
-************** Repo no longer being updated **************
-
 Personal [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) theme and custom functions.
 
 ## Setup
@@ -21,6 +19,14 @@ Update the following in `~/.zshrc`
 `plugins=(battery)`
 
 Requires a font with extra glyphs / icons added, such as [Hack](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack) from [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts).
+
+## Config Options
+Set the following in ~/.zshrc
+
+- Enable / Disable RPROMPT
+
+`DROFLOH_THEME_RPROMPT=(true|false)` Defaults to true.
+
 
 ## Preview
 ![screenshot](https://raw.githubusercontent.com/drofloh/oh-my-zsh-custom/master/screenshot.png)
