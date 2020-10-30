@@ -1,5 +1,7 @@
 # oh-my-zsh-custom
 
+************** Repo no longer being updated **************
+
 Personal [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) theme and custom functions.
 
 ## Setup
